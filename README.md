@@ -55,7 +55,9 @@ https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md
 | Loan Purpose | Reason for loan (e.g., education, medical, personal) |
 | Debt-to-Income Ratio (DTI) | Ratio of debt payments to income |
 | Default | Loan outcome (1 = default, 0 = no default) |
- 
+
+
+
 Paragraph explaining the domain the project lives in.  
 
 The domain of this project is financial risk analytics, specifically loan default prediction in consumer lending. This area focuses on using borrower financial and demographic information to assess the likelihood that an individual will fail to repay a loan. Key factors in this domain include credit scores, income, debt-to-income ratios, employment history, and loan characteristics such as interest rate and term length. Financial institutions use this type of analysis to make lending decisions, manage risk exposure, and set interest rates appropriately. In this project, loan-level data is structured using a document-based model to reflect how borrower attributes and loan outcomes are naturally grouped, allowing for more efficient analysis of default patterns across different segments of the lending population.
