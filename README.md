@@ -33,15 +33,46 @@ https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md
 
 ## Domain Exposition
 
-Terminology - Table summarizing jargon, KPIs, etc. 
+### Terminology
+
+| Term | Definition |
+|------|------------|
+| Loan ID | Unique identifier for each loan application |
+| Applicant Age | Age of the loan applicant (years) |
+| Income | Annual income of the applicant |
+| Education | Highest education level completed |
+| Employment Type | Type of employment (e.g., full-time, part-time, self-employed) |
+| Months Employed | Number of months the applicant has been employed |
+| Marital Status | Applicant’s marital status |
+| Dependents | Whether the applicant has dependents (True/False) |
+| Credit Score | Numerical score representing creditworthiness |
+| Number of Credit Lines | Total active credit accounts held by applicant |
+| Mortgage Status | Whether the applicant has a mortgage (True/False) |
+| Co-signer Status | Whether the loan has a co-signer (True/False) |
+| Loan Amount | Total amount borrowed |
+| Loan Term | Duration of loan in months |
+| Interest Rate | Interest rate applied to the loan |
+| Loan Purpose | Reason for loan (e.g., education, medical, personal) |
+| Debt-to-Income Ratio (DTI) | Ratio of debt payments to income |
+| Default | Loan outcome (1 = default, 0 = no default) |
  
 Paragraph explaining the domain the project lives in.  
+
+The domain of this project is financial risk analytics, specifically loan default prediction in consumer lending. This area focuses on using borrower financial and demographic information to assess the likelihood that an individual will fail to repay a loan. Key factors in this domain include credit scores, income, debt-to-income ratios, employment history, and loan characteristics such as interest rate and term length. Financial institutions use this type of analysis to make lending decisions, manage risk exposure, and set interest rates appropriately. In this project, loan-level data is structured using a document-based model to reflect how borrower attributes and loan outcomes are naturally grouped, allowing for more efficient analysis of default patterns across different segments of the lending population.
 
 Background readings:
 https://myuva-my.sharepoint.com/:f:/g/personal/uqj5uw_virginia_edu/IgCp68q99BWNRbeH3FqCeSZ4AcBZOXcLsy3ktU2TxGQe7Uk?e=Qtr2oL
 
 Table - showing a summary of the readings, one row per
 item, includes title, brief description, and link to file in folder
+
+| Title | Brief Description | Link |
+|------|------------------|------|
+| Loan Default Risk and Macroeconomic Conditions (Albanesi & Domos) | Academic paper analyzing how macroeconomic conditions and borrower characteristics influence default risk. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/PredictingConsDefault-UGA-Reading2.pdf |
+| Default Rate (Investopedia) | Explains what loan default rate means, how it is calculated, and why it is important in credit risk analysis. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/Investopedia-Reading3.pdf |
+| Consumer Delinquency Trends (Federal Reserve) | Reports recent trends in consumer delinquency and repayment behavior in the U.S. credit system. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/Federal-Reserve-Reading1.pdf |
+| Predicting Loan Default Risk Using Machine Learning (Medium) | Demonstrates a practical machine learning pipeline for predicting loan default using borrower features. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/Medium-MachineLearning-Reading4.pdf |
+| Machine Learning Approaches to Credit Risk (ScienceDirect) | Research article exploring advanced ML techniques for credit risk prediction and model performance. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/ScienceDirect-Reading5.pdf |
 
 ## Data Creation
 Paragraph (or two) explaining the raw data acquisition
