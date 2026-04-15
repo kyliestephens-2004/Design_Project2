@@ -71,10 +71,10 @@ item, includes title, brief description, and link to file in folder
 | Title | Brief Description | Link |
 |------|------------------|------|
 | Loan Default Risk and Macroeconomic Conditions (Albanesi & Domos) | Academic paper analyzing how macroeconomic conditions and borrower characteristics influence default risk. | https://myuva-my.sharepoint.com/:b:/g/personal/uqj5uw_virginia_edu/IQCo9buHkDvSQYjoa3wsGzE8ASH_35FAU4j0upuPolAtVz8?e=uVec1U |
-| Default Rate (Investopedia) | Explains what loan default rate means, how it is calculated, and why it is important in credit risk analysis. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/Investopedia-Reading3.pdf |
-| Consumer Delinquency Trends (Federal Reserve) | Reports recent trends in consumer delinquency and repayment behavior in the U.S. credit system. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/Federal-Reserve-Reading1.pdf |
-| Predicting Loan Default Risk Using Machine Learning (Medium) | Demonstrates a practical machine learning pipeline for predicting loan default using borrower features. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/Medium-MachineLearning-Reading4.pdf |
-| Machine Learning Approaches to Credit Risk (ScienceDirect) | Research article exploring advanced ML techniques for credit risk prediction and model performance. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/ScienceDirect-Reading5.pdf |
+| Default Rate (Investopedia) | Explains what loan default rate means, how it is calculated, and why it is important in credit risk analysis. | https://myuva-my.sharepoint.com/:b:/g/personal/uqj5uw_virginia_edu/IQAv1OOzCuyfToaM85pBJjW1AZiYsnTIeRRWX0AJpmOytkg?e=1550Ik |
+| Consumer Delinquency Trends (Federal Reserve) | Reports recent trends in consumer delinquency and repayment behavior in the U.S. credit system. | https://myuva-my.sharepoint.com/:b:/g/personal/uqj5uw_virginia_edu/IQA5jsZcnnuoRI-Mnorm8F0gAfyZ2Hz639gzTCHwe3nfIxw?e=dLvXc4 |
+| Predicting Loan Default Risk Using Machine Learning (Medium) | Demonstrates a practical machine learning pipeline for predicting loan default using borrower features. | https://myuva-my.sharepoint.com/:b:/g/personal/uqj5uw_virginia_edu/IQAcV45ZLwdsTZ4DqZFUiWEdAZ2K9zafzOq60JZw5ypt9RM?e=imsToA |
+| Machine Learning Approaches to Credit Risk (ScienceDirect) | Research article exploring advanced ML techniques for credit risk prediction and model performance. | https://myuva-my.sharepoint.com/:b:/g/personal/uqj5uw_virginia_edu/IQBRSRr4DKy2Q4yEHPHUbNhLAZ5VD0NbMyXWSV5xN1AC-JM?e=ZhsmeA |
 
 ## Data Creation
 Paragraph (or two) explaining the raw data acquisition
