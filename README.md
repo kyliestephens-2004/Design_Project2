@@ -32,6 +32,7 @@ While the general problem vaguely acknowledges the known fact that defaults on l
 
 Headline of Press Release:  
 link to separate markdown file containing the press release:
+
 https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md
 
 ## Domain Exposition
@@ -93,6 +94,8 @@ in repo
 
 Link to Code for Data Assembly: 
 
+https://github.com/kyliestephens-2004/Design_Project2/blob/main/DataCreation_2.ipynb
+
 Rationale for critical decisions, especially judgement calls,
 and places that can introduce/mitigate uncertainty
  
@@ -107,7 +110,40 @@ Implicit Schema Guidelines for document structure
 Data Summary Summary of Database contents - tabular
 form is permissible
 
-Data Dictionary Table with one row per feature in the
-data set containing: name, data type, description, example
+### Data Dictionary
 
-Data Dictionary quantification of uncertainty for numerical features
+| Column Name       | Column Type | Data Type | Description                                                                 | Example                  |
+|------------------|------------|----------|-----------------------------------------------------------------------------|--------------------------|
+| LoanID          | Identifier | string   | A unique identifier for each loan.                                          | L00012345               |
+| Age             | Feature    | integer  | The age of the borrower.                                                    | 35                       |
+| Income          | Feature    | integer  | The annual income of the borrower.                                          | 75000                    |
+| LoanAmount      | Feature    | integer  | The amount of money being borrowed.                                         | 20000                    |
+| CreditScore     | Feature    | integer  | The credit score of the borrower, indicating creditworthiness.              | 720                      |
+| MonthsEmployed  | Feature    | integer  | Number of months the borrower has been employed.                            | 60                       |
+| NumCreditLines  | Feature    | integer  | Number of credit lines the borrower has open.                               | 5                        |
+| InterestRate    | Feature    | float    | The interest rate for the loan.                                             | 5.75                     |
+| LoanTerm        | Feature    | integer  | The term length of the loan in months.                                      | 36                       |
+| DTIRatio        | Feature    | float    | Debt-to-Income ratio (debt compared to income).                             | 0.32                     |
+| Education       | Feature    | string   | Highest level of education attained.                                        | Bachelor's               |
+| EmploymentType  | Feature    | string   | Employment status of the borrower.                                          | Full-time                |
+| MaritalStatus   | Feature    | string   | Marital status of the borrower.                                             | Single                   |
+| HasMortgage     | Feature    | string   | Whether the borrower has a mortgage.                                        | Yes                      |
+| HasDependents   | Feature    | string   | Whether the borrower has dependents.                                        | No                       |
+| LoanPurpose     | Feature    | string   | Purpose of the loan.                                                        | Auto                     |
+| HasCoSigner     | Feature    | string   | Whether the loan has a co-signer.                                           | Yes                      |
+| Default         | Target     | integer  | Binary variable indicating loan default (1 = default, 0 = no default).      | 0                        |
+
+### Data Dictionary for Uncertainty
+
+
+| Feature         | Mean        | Std Dev     | SE        | CI Lower    | CI Upper    | Min   | Max     | IQR       | N       |
+|----------------|------------|------------|----------|------------|------------|------|--------|----------|--------|
+| Age            | 43.498306  | 14.990258  | 0.029665 | 43.440163  | 43.556450  | 18.0 | 69.0   | 25.00    | 255347 |
+| Income         | 82499.3046 | 38963.0137 | 77.105820| 82348.1772 | 82650.4320 | 15000| 149999 | 67393.50 | 255347 |
+| LoanAmount     | 127578.8655| 70840.7061 | 140.19015| 127304.0928| 127853.6382| 5000 | 249999 | 122829.00| 255347 |
+| CreditScore    | 574.264346 | 158.903867 | 0.314463 | 573.647999 | 574.880693 | 300  | 849    | 275.00   | 255347 |
+| MonthsEmployed | 59.541976  | 34.643376  | 0.068557 | 59.407604  | 59.676349  | 0    | 119    | 60.00    | 255347 |
+| NumCreditLines | 2.501036   | 1.117018   | 0.002211 | 2.496703   | 2.505368   | 1    | 4      | 1.00     | 255347 |
+| InterestRate   | 13.492773  | 6.636443   | 0.013133 | 13.467032  | 13.518515  | 2    | 25     | 11.48    | 255347 |
+| LoanTerm       | 36.025894  | 16.969330  | 0.033581 | 35.960075  | 36.091714  | 12   | 60     | 24.00    | 255347 |
+| DTIRatio       | 0.500212   | 0.230917   | 0.000457 | 0.499316   | 0.501108   | 0.1  | 0.9    | 0.40     | 255347 |
