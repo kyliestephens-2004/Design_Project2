@@ -70,7 +70,7 @@ item, includes title, brief description, and link to file in folder
 
 | Title | Brief Description | Link |
 |------|------------------|------|
-| Loan Default Risk and Macroeconomic Conditions (Albanesi & Domos) | Academic paper analyzing how macroeconomic conditions and borrower characteristics influence default risk. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/PredictingConsDefault-UGA-Reading2.pdf |
+| Loan Default Risk and Macroeconomic Conditions (Albanesi & Domos) | Academic paper analyzing how macroeconomic conditions and borrower characteristics influence default risk. | https://myuva-my.sharepoint.com/:b:/g/personal/uqj5uw_virginia_edu/IQCo9buHkDvSQYjoa3wsGzE8ASH_35FAU4j0upuPolAtVz8?e=uVec1U |
 | Default Rate (Investopedia) | Explains what loan default rate means, how it is calculated, and why it is important in credit risk analysis. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/Investopedia-Reading3.pdf |
 | Consumer Delinquency Trends (Federal Reserve) | Reports recent trends in consumer delinquency and repayment behavior in the U.S. credit system. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/Federal-Reserve-Reading1.pdf |
 | Predicting Loan Default Risk Using Machine Learning (Medium) | Demonstrates a practical machine learning pipeline for predicting loan default using borrower features. | https://github.com/kyliestephens-2004/Design_Project2/blob/main/Background-Readings/Medium-MachineLearning-Reading4.pdf |
