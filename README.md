@@ -3,7 +3,7 @@
 Executive Summary - Short paragraph explaining the
 contents of the respository in executive form
 
-NameL Kylie Stephens
+Name: Kylie Stephens
 
 NetID: uqj5uw
 
