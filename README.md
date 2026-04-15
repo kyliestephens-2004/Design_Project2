@@ -85,7 +85,7 @@ row per file, with a brief description and link to source code
 in repo
 | File / Script         | Description                                                                                                                                                                                                                                  | Link to Code                                                                            |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `DataCreation-2.ipynb` | Loads raw Loan_default.csv downloaded from kaggle. Converts this to a document model form with implicit schema. Connects to MongoDB and uploads documents into database. | [GitHub link] |
+| `DataCreation_2.ipynb` | Loads raw Loan_default.csv downloaded from kaggle. Converts this to a document model form with implicit schema. Connects to MongoDB and uploads documents into database. | [GitHub link] https://github.com/kyliestephens-2004/Design_Project2/blob/main/DataCreation_2.ipynb |
 
 
 Link to Code for Data Assembly: 
