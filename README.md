@@ -83,6 +83,12 @@ process (provenance).
 Code Table showing the code used to create the data, one
 row per file, with a brief description and link to source code
 in repo
+| File / Script         | Description                                                                                                                                                                                                                                  | Link to Code                                                                            |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| `DataCreation-2.ipynb` | Loads raw Loan_default.csv downloaded from kaggle. Converts this to a document model form with implicit schema. Connects to MongoDB and uploads documents into database. | [GitHub link] |
+
+
+Link to Code for Data Assembly: 
 
 Rationale for critical decisions, especially judgement calls,
 and places that can introduce/mitigate uncertainty
