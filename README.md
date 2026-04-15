@@ -1,11 +1,11 @@
-# DS 4320 Project 2: XXX
+# DS 4320 Project 2: Factors Influencing Loan Default Risk 
 
 Executive Summary - Short paragraph explaining the
 contents of the respository in executive form
 
-Name - Kylie Stephens
+NameL Kylie Stephens
 
-NetID - uqj5uw
+NetID: uqj5uw
 
 DOI - create a DOI for your project 
  
@@ -19,13 +19,15 @@ License State- MIT License
 https://github.com/kyliestephens-2004/Design_Project2/blob/main/LICENSE
 
 ## Problem Definition 
-State the initial general problem and refined specific
-problem statement
+General Problem: Borrowers default on loan payments.
 
-One paragraph explaining the motivation for the project   
+Refined Problem: Identifying which borrower financial attributes (income, debt-to-income ratio, credit score, etc.) most strongly predict loan default behavior.
 
-One paragraph explaining the rationale for the refinement
-from general to specific
+A major goal of companies with financial loan services is to decrease the number of defaults on loan payments, ensuring that all payments are being completed on time. Loan defaults create significant financial risk for lenders and impact credit availability in the broader economy. Improving prediction accuracy can help reduce losses and support better lending decisions. In the financial industry, this is a very relevant machine learning problem, and improved prediction accuracy benefits both companies and borrowers.   
+
+Rationale for Refinement:
+
+While the general problem vaguely acknowledges the known fact that defaults on loan payments occur, the refined problem hones in on a specific way to attempt to solve this problem, or at least reduce the number of defaults on loan payments. Narrowing the problem to specific borrower-level features allows for more precise modeling and actionable insights that can be directly used in lending decisions. Looking into feature importance in machine learning provides comprehensible insights and transparency into why the model is coming to a decision regarding an individual's risk score. It also provides more specific places to focus in on for both borrowers and lenders in the loan process; for example, a borrower may be given a risk score of .8 for defaulting, and the model could be used to generate a report, showing the lender and borrower that this individual is at high risk of defaulting because of credit score and income.
 
 Headline of Press Release:  
 link to separate markdown file containing the press release:
