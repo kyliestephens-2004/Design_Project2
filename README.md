@@ -140,14 +140,14 @@ form is permissible
 ### Data Dictionary for Uncertainty
 
 
-| Feature         | Mean        | Std Dev     | SE        | CI Lower    | CI Upper    | Min   | Max     | IQR       | N       |
-|----------------|------------|------------|----------|------------|------------|------|--------|----------|--------|
-| Age            | 43.498306  | 14.990258  | 0.029665 | 43.440163  | 43.556450  | 18.0 | 69.0   | 25.00    | 255347 |
-| Income         | 82499.3046 | 38963.0137 | 77.105820| 82348.1772 | 82650.4320 | 15000| 149999 | 67393.50 | 255347 |
-| LoanAmount     | 127578.8655| 70840.7061 | 140.19015| 127304.0928| 127853.6382| 5000 | 249999 | 122829.00| 255347 |
-| CreditScore    | 574.264346 | 158.903867 | 0.314463 | 573.647999 | 574.880693 | 300  | 849    | 275.00   | 255347 |
-| MonthsEmployed | 59.541976  | 34.643376  | 0.068557 | 59.407604  | 59.676349  | 0    | 119    | 60.00    | 255347 |
-| NumCreditLines | 2.501036   | 1.117018   | 0.002211 | 2.496703   | 2.505368   | 1    | 4      | 1.00     | 255347 |
-| InterestRate   | 13.492773  | 6.636443   | 0.013133 | 13.467032  | 13.518515  | 2    | 25     | 11.48    | 255347 |
-| LoanTerm       | 36.025894  | 16.969330  | 0.033581 | 35.960075  | 36.091714  | 12   | 60     | 24.00    | 255347 |
-| DTIRatio       | 0.500212   | 0.230917   | 0.000457 | 0.499316   | 0.501108   | 0.1  | 0.9    | 0.40     | 255347 |
+| Feature        | Mean        | Std Dev    | SE        | CI Lower    | CI Upper    | Min   | Max    | IQR       | N      | Qualitative Uncertainty                                                |
+| -------------- | ----------- | ---------- | --------- | ----------- | ----------- | ----- | ------ | --------- | ------ | ---------------------------------------------------------------------- |
+| Age            | 43.498306   | 14.990258  | 0.029665  | 43.440163   | 43.556450   | 18.0  | 69.0   | 25.00     | 255347 | Moderate variability; broadly stable distribution across adult range   |
+| Income         | 82499.3046  | 38963.0137 | 77.105820 | 82348.1772  | 82650.4320  | 15000 | 149999 | 67393.50  | 255347 | High uncertainty due to wide dispersion and strong heterogeneity       |
+| LoanAmount     | 127578.8655 | 70840.7061 | 140.19015 | 127304.0928 | 127853.6382 | 5000  | 249999 | 122829.00 | 255347 | Very high variability; indicates diverse borrowing behavior            |
+| CreditScore    | 574.264346  | 158.903867 | 0.314463  | 573.647999  | 574.880693  | 300   | 849    | 275.00    | 255347 | Moderate uncertainty; spread suggests meaningful credit heterogeneity  |
+| MonthsEmployed | 59.541976   | 34.643376  | 0.068557  | 59.407604   | 59.676349   | 0     | 119    | 60.00     | 255347 | Moderate variability; workforce stability varies substantially         |
+| NumCreditLines | 2.501036    | 1.117018   | 0.002211  | 2.496703    | 2.505368    | 1     | 4      | 1.00      | 255347 | Low uncertainty; discrete and tightly bounded distribution             |
+| InterestRate   | 13.492773   | 6.636443   | 0.013133  | 13.467032   | 13.518515   | 2     | 25     | 11.48     | 255347 | Moderate-high uncertainty; wide spread reflects pricing risk variation |
+| LoanTerm       | 36.025894   | 16.969330  | 0.033581  | 35.960075   | 36.091714   | 12    | 60     | 24.00     | 255347 | Moderate variability; mixed short- and long-term borrowing structures  |
+| DTIRatio       | 0.500212    | 0.230917   | 0.000457  | 0.499316    | 0.501108    | 0.1   | 0.9    | 0.40      | 255347 | Low-moderate uncertainty; relatively centered with bounded spread      |
