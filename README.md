@@ -9,11 +9,15 @@ NetID: uqj5uw
 
 DOI - create a DOI for your project 
  
+
 Press Release: 
+
 https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md
   
+
 Pipeline - link to pipeline file 
  
+
 License State- MIT License
 
 https://github.com/kyliestephens-2004/Design_Project2/blob/main/LICENSE
