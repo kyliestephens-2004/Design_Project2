@@ -23,25 +23,28 @@ License State- MIT License
 https://github.com/kyliestephens-2004/Design_Project2/blob/main/LICENSE
 
 ## Problem Definition 
-General Problem: Borrowers default on loan payments.
+
+General Problem: Understanding factors that influence loan default risk.
 
 Refined Problem: Identifying which borrower financial attributes (income, debt-to-income ratio, credit score, etc.) most strongly predict loan default behavior.
 
+**Project Motivation**
+
 A major goal of companies with financial loan services is to decrease the number of defaults on loan payments, ensuring that all payments are being completed on time. Loan defaults create significant financial risk for lenders and impact credit availability in the broader economy. Improving prediction accuracy can help reduce losses and support better lending decisions. In the financial industry, this is a very relevant machine learning problem, and improved prediction accuracy benefits both companies and borrowers.   
 
-Rationale for Refinement:
+**Rationale for Problem Refinement**
 
-While the general problem vaguely acknowledges the known fact that defaults on loan payments occur, the refined problem hones in on a specific way to attempt to solve this problem, or at least reduce the number of defaults on loan payments. Narrowing the problem to specific borrower-level features allows for more precise modeling and actionable insights that can be directly used in lending decisions. Looking into feature importance in machine learning provides comprehensible insights and transparency into why the model is coming to a decision regarding an individual's risk score. It also provides more specific places to focus in on for both borrowers and lenders in the loan process; for example, a borrower may be given a risk score of .8 for defaulting, and the model could be used to generate a report, showing the lender and borrower that this individual is at high risk of defaulting because of credit score and income.
+While the general problem vaguely acknowledges the known fact that defaults on loan payments occur, the refined problem hones in on a specific way to attempt to solve this problem, or at least reduce the number of defaults on loan payments. Narrowing the problem to specific borrower-level features allows for more precise modeling and actionable insights that can be directly used in lending decisions. Looking into feature importance in machine learning provides comprehensible insights and transparency into why the model is coming to a decision regarding an individual's risk score. It also provides more specific places to focus in on for both borrowers and lenders in the loan process; for example, a borrower may be given a risk score of .8 for defaulting, and the model could be used to generate a report, showing the lender and borrower that this individual is at high risk of defaulting because of credit score and income. It also could debunk lenders' prior beliefs regarding what factors most heavily influence loan default risk, allowing them to see the process from a more objective view (even though data itself may contain biases, the human bias in deciding what factors are most influential is eliminated).
 
-
-Headline of Press Release:  
-link to separate markdown file containing the press release:
+**Press Release Snippet**
 
-https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md
+Headline of Press Release: Loan Default Risk Is Driven Primarily by Debt Burden and Credit Quality
+
+Click https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md to read the press release.
 
 ## Domain Exposition
 
-### Terminology
+**Terminology**
 
 | Term | Definition |
 |------|------------|
@@ -66,15 +69,13 @@ https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md
 
 
 
-Paragraph explaining the domain the project lives in.  
+**Project Domain** 
 
-The domain of this project is financial risk analytics, specifically loan default prediction in consumer lending. This area focuses on using borrower financial and demographic information to assess the likelihood that an individual will fail to repay a loan. Key factors in this domain include credit scores, income, debt-to-income ratios, employment history, and loan characteristics such as interest rate and term length. Financial institutions use this type of analysis to make lending decisions, manage risk exposure, and set interest rates appropriately. In this project, loan-level data is structured using a document-based model to reflect how borrower attributes and loan outcomes are naturally grouped, allowing for more efficient analysis of default patterns across different segments of the lending population.
+The domain of this project is financial risk analytics, specifically loan default prediction in consumer lending. This area focuses on using borrower financial and demographic information to assess the likelihood that an individual will fail to repay a loan. Key factors in this domain include credit scores, income, debt-to-income ratios, employment history, and loan characteristics such as interest rate and term length. Financial institutions use this type of analysis to make lending decisions, manage risk exposure, and set interest rates appropriately. In this project, loan-level data is structured using a document-based model to reflect how borrower attributes and loan outcomes are naturally grouped, allowing for more efficient analysis of default patterns across different segments of the lending population. The key factors included in the dataset and terminology table above will provide insight into individual behaviors that help a financial institution determine if said individual should be approved for a loan or if they should denied.
 
-Background readings:
+**Background Readings:**
+
 https://myuva-my.sharepoint.com/:f:/g/personal/uqj5uw_virginia_edu/IgCp68q99BWNRbeH3FqCeSZ4AcBZOXcLsy3ktU2TxGQe7Uk?e=Qtr2oL
-
-Table - showing a summary of the readings, one row per
-item, includes title, brief description, and link to file in folder
 
 | Title | Brief Description | Link |
 |------|------------------|------|
@@ -85,36 +86,64 @@ item, includes title, brief description, and link to file in folder
 | Machine Learning Approaches to Credit Risk (ScienceDirect) | Research article exploring advanced ML techniques for credit risk prediction and model performance. | https://myuva-my.sharepoint.com/:b:/g/personal/uqj5uw_virginia_edu/IQBRSRr4DKy2Q4yEHPHUbNhLAZ5VD0NbMyXWSV5xN1AC-JM?e=ZhsmeA |
 
 ## Data Creation
-Paragraph (or two) explaining the raw data acquisition
-process (provenance).
+
+**Acquisition and Provenance**
 
-Code Table showing the code used to create the data, one
-row per file, with a brief description and link to source code
-in repo
+**Code Table**
+
 | File / Script         | Description                                                                                                                                                                                                                                  | Link to Code                                                                            |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `DataCreation_2.ipynb` | Loads raw Loan_default.csv downloaded from kaggle. Converts this to a document model form with implicit schema. Connects to MongoDB and uploads documents into database. | [GitHub link] https://github.com/kyliestephens-2004/Design_Project2/blob/main/DataCreation_2.ipynb |
+| `DataCreation_P2.ipynb` | Loads raw Loan_default.csv downloaded from kaggle. Converts this to a document model form with implicit schema. Connects to MongoDB and uploads documents into database. Data ingestion, MongoDB setup, import, and schema transformation are done using mongosh. | [GitHub link] https://github.com/kyliestephens-2004/Design_Project2/blob/main/DataCreation_P2.ipynb |
 
 
-Link to Code for Data Assembly: 
+**Link to Code for Data Assembly:**
 
-https://github.com/kyliestephens-2004/Design_Project2/blob/main/DataCreation_2.ipynb
+https://github.com/kyliestephens-2004/Design_Project2/blob/main/DataCreation_P2.ipynb
 
-Rationale for critical decisions, especially judgement calls,
-and places that can introduce/mitigate uncertainty
+**Rationale**
+
+A major judgment call involved deciding whether to preserve the original flat schema or restructure the documents into a nested format. While the CSV was naturally tabular, a nested MongoDB schema was preferred because it better reflects real-world borrower relationships and improves interpretability for machine learning. For example, grouping age, income, and education under applicant makes the data easier to reason about than maintaining many disconnected flat columns. Another important decision was converting categorical “Yes/No” variables (such as mortgage ownership and co-signer presence) into Boolean values. This reduces ambiguity, improves consistency, and simplifies feature engineering later in the modeling process. Uncertainty may be introduced during type conversion (for example, converting numeric values stored as strings) or during reshaping if field mappings are incorrectly specified. To mitigate this, document counts were verified after import, and sample records were inspected using findOne() and countDocuments() to ensure structural consistency.
  
-Bias Identification description of how bias could be/was
-introduced in the data collection process
+**Bias Identification**
+
+Bias could be introduced in the dataset during the original data collection process on Coursera/Kaggle because the data may not represent the full population of loan applicants. If the dataset was collected from a specific institution, platform, or region, it may reflect selection bias, where certain types of borrowers are overrepresented while others are underrepresented or excluded. Historical lending data can also contain societal and institutional biases, such as unequal loan approval patterns based on income, credit history, or demographic factors. These biases become embedded in the dataset and can influence any downstream analysis. Downstream effects of these biases include wealth inequality and disparities may be reflected in incomes and credit scores, even though they are a product of prior systemic discrimination and inequalities in society. This ties back to the idea that data can never be neutral.
  
-Bias mitigation description of how biases can be handled/quantified/accounted for in analysis
+**Bias Mitigation**
+
+Bias can be addressed in analysis by first identifying whether certain groups or outcomes are over- or under-represented in the dataset. Techniques such as re-sampling, re-weighting, or stratified analysis can help reduce imbalance across groups if demographic variables are available. Model evaluation should include fairness-aware metrics to assess whether predictions differ systematically across groups. However, since this dataset may not include all relevant protected attributes, bias cannot be fully removed and should instead be acknowledged as a limitation, especially because bias stemming from data collection is most likely the dominating form of bias in this dataset. Also, other features not included in this dataset would be needed to understand if a representative sample was collected (i.e. race).
 
 ## Metadata
-Implicit Schema Guidelines for document structure 
 
-Data Summary Summary of Database contents - tabular
-form is permissible
+**Implicit Schema Guidelines**
+The database is organized so that related information is grouped together inside each document. Instead of keeping every field in one long flat list, the data is stored in smaller sections that make it easier to read and analyze.
+Each document represents one borrower and their loan information. The document is divided into four main sections: 
+- applicant → personal and employment information like age, income, education, marital status, and whether they have dependents
+- credit_profile → financial and credit details like credit score, number of credit lines, mortgage status, and whether they have a co-signer
+- loan → loan-specific details like loan amount, loan term, interest rate, purpose of the loan, and debt-to-income ratio
+- outcome → whether the borrower defaulted on the loan or not
+There is also a loan_id field that acts as a unique identifier for each borrower.
+Fields like “Yes” and “No” were changed into true and false values so the data would be easier to work with in machine learning models. Number fields were also kept as integers or decimals depending on the type of value.
 
-### Data Dictionary
+This is an image of one of the documents in the database - you can see the structure, nesting, and field names. This displays the implicit schema in MongoDB.
+### INSERT IMAGE
+
+**Data Summary**
+
+| Attribute            | Summary                                                                                  |
+| -------------------- | ---------------------------------------------------------------------------------------- |
+| Database Name        | `mydb`                                                                                   |
+| Raw Collection       | `loan_default`                                                                           |
+| Processed Collection | `loan_default_nested`                                                                    |
+| Total Documents      | 255347 documents in each collection.                                                    |
+| Raw Structure        | Flat JSON documents imported from CSV.                                                    |
+| Processed Structure  | Nested JSON documents grouped into applicant, credit profile, loan, and outcome sections. |
+| Target Variable      | `Default` (raw) / `outcome.default` (nested)                                             |
+| Primary Identifier   | `LoanID` (raw) / `loan_id` (nested)                                                      |
+| Missing Values       | No missing values.                                                                        |
+| Source               | Kaggle/Coursera Loan Default Prediction Dataset                                                   |
+
+
+**Data Dictionary**
 
 | Column Name       | Column Type | Data Type | Description                                                                 | Example                  |
 |------------------|------------|----------|-----------------------------------------------------------------------------|--------------------------|
@@ -137,7 +166,7 @@ form is permissible
 | HasCoSigner     | Feature    | string   | Whether the loan has a co-signer.                                           | Yes                      |
 | Default         | Target     | integer  | Binary variable indicating loan default (1 = default, 0 = no default).      | 0                        |
 
-### Data Dictionary for Uncertainty
+**Data Dictionary for Uncertainty**
 
 
 | Feature        | Mean        | Std Dev    | SE        | CI Lower    | CI Upper    | Min   | Max    | IQR       | N      | Qualitative Uncertainty                                                |
