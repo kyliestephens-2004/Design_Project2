@@ -69,7 +69,7 @@ Click https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Rele
 
 
 
-**Project Domain** 
+**Project Domain**
 
 The domain of this project is financial risk analytics, specifically loan default prediction in consumer lending. This area focuses on using borrower financial and demographic information to assess the likelihood that an individual will fail to repay a loan. Key factors in this domain include credit scores, income, debt-to-income ratios, employment history, and loan characteristics such as interest rate and term length. Financial institutions use this type of analysis to make lending decisions, manage risk exposure, and set interest rates appropriately. In this project, loan-level data is structured using a document-based model to reflect how borrower attributes and loan outcomes are naturally grouped, allowing for more efficient analysis of default patterns across different segments of the lending population. The key factors included in the dataset and terminology table above will provide insight into individual behaviors that help a financial institution determine if said individual should be approved for a loan or if they should denied.
 
@@ -87,8 +87,10 @@ https://myuva-my.sharepoint.com/:f:/g/personal/uqj5uw_virginia_edu/IgCp68q99BWNR
 
 ## Data Creation
 
+
 **Acquisition and Provenance**
 
+
 **Code Table**
 
 | File / Script         | Description                                                                                                                                                                                                                                  | Link to Code                                                                            |
@@ -115,6 +117,7 @@ Bias can be addressed in analysis by first identifying whether certain groups or
 ## Metadata
 
 **Implicit Schema Guidelines**
+
 The database is organized so that related information is grouped together inside each document. Instead of keeping every field in one long flat list, the data is stored in smaller sections that make it easier to read and analyze.
 Each document represents one borrower and their loan information. The document is divided into four main sections: 
 - applicant → personal and employment information like age, income, education, marital status, and whether they have dependents
