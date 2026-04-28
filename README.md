@@ -1,7 +1,11 @@
 # DS 4320 Project 2: Factors Influencing Loan Default Risk 
 
-Executive Summary - Short paragraph explaining the
-contents of the respository in executive form
+**Executive Summary**
+This repository contains a machine learning pipeline for predicting loan default risk using borrower financial and demographic data. The dataset includes features such as income, credit score, debt-to-income ratio, loan amount, employment type, and loan purpose, which are used to model the likelihood of loan default.
+
+The README contains information on the problem being solved, domain context in financial credit risk, data preparation steps, and project metadata. The repository also includes a Random Forest classifier that is used to predict the probability of default for new loan applicants and rank borrowers by risk level. Key visualizations such as feature importance, risk score distribution, and ROC curves are included to support interpretation of the model and its performance.
+
+The press release describes how this model can be applied in real-world lending decisions, including how risk scores can be used to support loan approval thresholds and improve credit risk management. When utilizing this repository, please refer to the project documentation and ensure appropriate interpretation of model outputs in financial decision-making contexts.
 
 Name: Kylie Stephens
 
@@ -15,7 +19,9 @@ Press Release:
 https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md
   
 
-Pipeline - link to pipeline file 
+Pipeline:
+
+https://github.com/kyliestephens-2004/Design_Project2/tree/main/Pipeline_Files
  
 
 License State- MIT License
@@ -127,9 +133,6 @@ Each document represents one borrower and their loan information. The document i
 - outcome → whether the borrower defaulted on the loan or not
 There is also a loan_id field that acts as a unique identifier for each borrower.
 Fields like “Yes” and “No” were changed into true and false values so the data would be easier to work with in machine learning models. Number fields were also kept as integers or decimals depending on the type of value.
-
-This is an image of one of the documents in the database - you can see the structure, nesting, and field names. This displays the implicit schema in MongoDB.
-### INSERT IMAGE
 
 **Data Summary**
 
