@@ -22,7 +22,6 @@ df = df.drop_duplicates()
 **handle missing values**
 df = df.dropna()
 
-# drop ID columns if they exist
 df = df.drop(columns=["LoanID"], errors="ignore")
 
 df.shape
