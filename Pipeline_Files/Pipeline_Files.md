@@ -354,7 +354,7 @@ import matplotlib.pyplot as plt
 
 plt.rcParams["font.family"] = ["DejaVu Serif"]
 
-# predicted probabilities
+**Predicted probabilities**
 risk_scores = model.predict_proba(X_test)[:, 1]
 
 cutoff = 0.35  # chosen business threshold
