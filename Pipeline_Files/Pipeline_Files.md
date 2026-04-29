@@ -272,7 +272,7 @@ import numpy as np
 
 plt.rcParams["font.family"] = ["DejaVu Serif"]
 
-# --- sort by importance (NOT feature names) ---
+
 indices = np.argsort(importances)  # descending order
 
 plt.figure(figsize=(10, 6))
@@ -287,7 +287,6 @@ plt.title("Key Drivers of Loan Default Risk", fontsize=14)
 plt.xlabel("Feature Importance")
 plt.ylabel("")
 
-# optional: keep clean but readable
 plt.grid(axis="x", linestyle="--", alpha=0.3)
 
 ax = plt.gca()
@@ -317,7 +316,6 @@ plt.rcParams["font.family"] = ["DejaVu Serif"]
 # predicted probabilities
 risk_scores = model.predict_proba(X_test)[:, 1]
 
-# --- plot distribution ---
 plt.figure(figsize=(10, 6))
 
 plt.hist(
@@ -329,7 +327,7 @@ plt.hist(
 
 plt.title("Distribution of Predicted Loan Default Risk", fontsize=14)
 
-# correct axes (THIS is what you wanted)
+
 plt.xlabel("Predicted Probability of Default (Risk Score)")
 plt.ylabel("Number of Individuals")
 
