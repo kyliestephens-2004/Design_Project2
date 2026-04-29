@@ -20,6 +20,7 @@ LoanID	Age	Income	LoanAmount	CreditScore	MonthsEmployed	NumCreditLines	InterestR
 df = df.drop_duplicates()
 
 **handle missing values**
+
 df = df.dropna()
 
 df = df.drop(columns=["LoanID"], errors="ignore")
