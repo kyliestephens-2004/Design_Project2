@@ -96,7 +96,9 @@ https://myuva-my.sharepoint.com/:f:/g/personal/uqj5uw_virginia_edu/IgCp68q99BWNR
 
 
 **Acquisition and Provenance**
-
+
+The raw dataset used for this project is the Loan Default Prediction Dataset from Kaggle, containing about 250,000 borrower records with features such as income, credit score, debt-to-income ratio, loan amount, employment history, education, and loan default status. The original Loan_default.csv file was downloaded into Google Colab and converted into a JSON file (loans.json) using pandas for MongoDB import. The data was uploaded to MongoDB Atlas into the loan_default collection within the mydb database using mongoimport. After verifying the upload, the flat documents were transformed into a nested NoSQL structure using a MongoDB aggregation pipeline. Related fields were grouped into sections such as applicant, credit_profile, loan, and outcome to improve organization and support machine learning analysis
+
 
 **Code Table**
 
