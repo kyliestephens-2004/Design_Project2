@@ -404,15 +404,15 @@ plt.show()
 
 
 
-##Analysis Rationale
+## Analysis Rationale
 
 The analysis uses a Random Forest classifier to predict loan default risk from borrower financial and demographic features because it performs well on structured tabular data, captures nonlinear relationships, and provides feature importance for interpretability. Class imbalance between defaulters and non-defaulters is addressed using class_weight=“balanced_subsample” to ensure the minority class is learned effectively. Model performance is evaluated using accuracy, precision, recall, and ROC-AUC rather than accuracy alone due to class imbalance concerns, with emphasis on recall for the default class since false negatives are more costly in lending contexts. Probability outputs are used to examine threshold tuning, allowing the model to move beyond binary classification and support decision-oriented risk analysis where different cutoffs reflect different risk tolerances.
 
-##Visualization Rationale
+## Visualization Rationale
 
 The visualizations are designed to support interpretability and decision-making in a credit risk context. Feature importance is displayed using a ranked horizontal bar chart with abels to identify the most influential predictors of default risk. A risk distribution plot shows how predicted probabilities are distributed across individuals, revealing model separation between low- and high-risk borrowers. A cutoff-based visualization translates predicted probabilities into actionable lending decisions by illustrating how threshold changes affect classification outcomes. The ROC curve provides a threshold-independent evaluation of model performance and is particularly appropriate for imbalanced classification, summarizing discriminative ability across all decision thresholds. All plots are styled for publication with minimal visual clutter, consistent formatting, and descriptive captions to ensure clarity and professional presentation.
 
-##Pipeline Solves Problem Justification
+# #Pipeline Solves Problem Justification
 
 The pipeline addresses the problem of understanding and predicting loan default risk by linking borrower-level financial and demographic attributes to observed default outcomes using a supervised machine learning framework. A Random Forest classifier is trained to model complex, nonlinear relationships between features such as income, credit score, debt-to-income ratio, and loan characteristics, enabling identification of the most influential drivers of default behavior. Class imbalance is explicitly handled to ensure reliable detection of defaulters, and model performance is evaluated using ROC-AUC, precision, and recall to capture both ranking quality and classification effectiveness. The resulting probability-based predictions allow borrowers to be ranked by risk and translated into decision thresholds that support lending actions such as approval, rejection, or review. Together, this provides both predictive accuracy and interpretability, enabling lenders to understand key risk factors and apply them directly in credit decision-making, thereby operationalizing the goal of reducing loan defaults.
 
