@@ -47,7 +47,7 @@ While the general problem vaguely acknowledges the known fact that defaults on l
 
 Headline of Press Release: Loan Default Risk Is Driven Primarily by Debt Burden and Credit Quality
 
-Click https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md to read the press release.
+Link:  https://github.com/kyliestephens-2004/Design_Project2/blob/main/Press-Release.md 
 
 ## Domain Exposition
 
