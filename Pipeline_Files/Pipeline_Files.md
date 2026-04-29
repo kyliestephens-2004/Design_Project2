@@ -14,10 +14,12 @@ LoanID	Age	Income	LoanAmount	CreditScore	MonthsEmployed	NumCreditLines	InterestR
 2	C1OZ6DPJ8Y	46	84208	129188	451	26	3	21.17	24	0.31	Master's	Unemployed	Divorced	Yes	Yes	Auto	No	1
 3	V2KKSFM3UN	32	31713	44799	743	0	3	7.07	24	0.23	High School	Full-time	Married	No	No	Business	No	0
 4	EY08JDHTZP	60	20437	9139	633	8	4	6.51	48	0.73	Bachelor's	Unemployed	Divorced	No	Yes	Auto	No	0
-# remove duplicates
+
+**remove duplicates**
+
 df = df.drop_duplicates()
 
-# handle missing values
+**handle missing values**
 df = df.dropna()
 
 # drop ID columns if they exist
@@ -123,20 +125,19 @@ Evaluating Model Performance + Comparing to a Threshold for Aggressive Risk Targ
 from sklearn.metrics import accuracy_score, classification_report, roc_auc_score
 import numpy as np
 
-# --- Predictions ---
+**Predictions**
 y_pred = model.predict(X_test)
 y_proba = model.predict_proba(X_test)[:, 1]
 
-# --- Standard evaluation ---
+**Standard Deviation**
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n")
 print(classification_report(y_test, y_pred))
 
-# --- ROC-AUC (important for imbalanced classification) ---
+**ROC-AUC (important for imbalanced classification)**
 roc_auc = roc_auc_score(y_test, y_proba)
 print("ROC-AUC:", roc_auc)
 
-# --- Optional: threshold tuning for better recall on defaults ---
 threshold = 0.35  # lower than 0.5 to catch more defaulters
 y_pred_adjusted = (y_proba >= threshold).astype(int)
 
@@ -174,19 +175,17 @@ import matplotlib.pyplot as plt
 
 plt.rcParams["font.family"] = ["DejaVu Serif"]
 
-# probabilities
 y_proba = model.predict_proba(X_test)[:, 1]
 
-# ROC computation
+**ROC computation**
 fpr, tpr, _ = roc_curve(y_test, y_proba)
 roc_auc = roc_auc_score(y_test, y_proba)
 
 plt.figure(figsize=(6.5, 6.5))
 
-# ROC curve
+**ROC curve**
 plt.plot(fpr, tpr, linewidth=2, label=f"AUC = {roc_auc:.2f}")
 
-# diagonal baseline
 plt.plot([0, 1], [0, 1], linestyle="--", color="black", alpha=0.6)
 
 plt.title("Receiver Operating Characteristic (ROC) Curve", fontsize=14)
@@ -196,7 +195,6 @@ plt.ylabel("True Positive Rate")
 
 plt.legend(frameon=False)
 
-# clean styling
 plt.grid(False)
 
 ax = plt.gca()
@@ -205,7 +203,6 @@ ax.spines["right"].set_visible(False)
 
 plt.tight_layout()
 
-# caption (publication style)
 plt.figtext(
     0.5, -0.05,
     "Figure: ROC curve evaluating the Random Forest model's ability to distinguish between loan defaulters and non-defaulters. "
@@ -313,7 +310,7 @@ import matplotlib.pyplot as plt
 
 plt.rcParams["font.family"] = ["DejaVu Serif"]
 
-# predicted probabilities
+**Predicted Probabilities**
 risk_scores = model.predict_proba(X_test)[:, 1]
 
 plt.figure(figsize=(10, 6))
@@ -339,7 +336,7 @@ ax.spines["right"].set_visible(False)
 
 plt.tight_layout()
 
-# caption
+
 plt.figtext(
     0.5, -0.05,
     "Figure: Distribution of predicted default probabilities across individuals. "
@@ -371,7 +368,7 @@ plt.hist(
     alpha=0.8
 )
 
-# vertical cutoff line
+**Adding vertical cutoff line**
 plt.axvline(
     cutoff,
     color="red",
